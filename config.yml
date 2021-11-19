@@ -160,13 +160,13 @@ menu:
 #         lineNos: true
 #         style: monokai
 
-# markup:
-#   asciidocext:
-#     extensions:
-#       - asciidoctor-html5s
-#       - asciidoctor-diagram
-#     workingFolderCurrent: true
-#     trace: true
-#     attributes:
-#       my-base-url: 'https://localhost/'
-#       my-attribute-name: my value
+markup:
+  asciidocext:
+    extensions:
+      - asciidoctor-html5s
+      - asciidoctor-diagram
+    workingFolderCurrent: true
+    trace: true
+    attributes:
+      my-base-url: 'https://localhost/'
+      my-attribute-name: my value
