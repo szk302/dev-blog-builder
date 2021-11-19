@@ -1,0 +1,20 @@
+name: Build blog builder image
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docker-images/hugo/Dockerfile'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docker-images/hugo/Dockerfile'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file docker-images/hugo/Dockerfile --tag ghcr.io/szk302/dev-blog-builder:hugo_asciidoctor
