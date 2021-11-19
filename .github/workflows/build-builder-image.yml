@@ -1,6 +1,16 @@
 name: Build blog builder image
 
 on:
+  workflow_dispatch: 
+    inputs:
+      hugo_version:
+        description: 'Hugo version'
+        required: false
+        default: '0.80.0'
+      asciidoctor_version:
+        description: 'Asciidoctor version'
+        required: false
+        default: '1.14.0'
   push:
     branches: [ main ]
     paths:
@@ -17,4 +27,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file docker-images/hugo/Dockerfile --tag ghcr.io/szk302/dev-blog-builder:hugo_asciidoctor
+      run: docker build . --file ./docker-images/hugo/Dockerfile --tag ghcr.io/szk302/dev-blog-builder:hugo_asciidoctor --build-arg HUGO_VERSION="${{ github.event.inputs.hugo_version }}" --build-arg ASCIIDOCTOR_VERSION="${{ github.event.inputs.asciidoctor_version }}" \

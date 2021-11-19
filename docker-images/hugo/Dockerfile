@@ -1,6 +1,9 @@
-FROM asciidoctor/docker-asciidoctor
+ARG ASCIIDOCTOR_VERSION='1.14.0'
 
-ENV HUGO_VERSION='0.78.0'
+FROM asciidoctor/docker-asciidoctor:"${ASCIIDOCTOR_VERSION}"
+
+ARG HUGO_VERSION='0.80.0'
+
 ENV HUGO_BASE_URL="https://github.com/gohugoio/hugo/releases/download"
 ENV HUGO_TAR_FILE_NAME="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
 ENV HUGO_TAR_FILE_URL="${HUGO_BASE_URL}/v${HUGO_VERSION}/${HUGO_TAR_FILE_NAME}"
