@@ -4,8 +4,18 @@ on:
     inputs:
       build_image_name:
         description: 'Image name'
-        required: true
         default: ''
+        required: true
+  workflow_call:
+    inputs:
+      build_image_name:
+        description: 'Image name'
+        default: ''
+        required: true
+        type: string
+    # secrets:
+    #   token:
+    #     required: false
 jobs:
   build:
     runs-on: ubuntu-latest
