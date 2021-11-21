@@ -72,7 +72,7 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "開発の日々..."
+        Title: "開発の日々"
         # Content: Welcome to my blog
 
     socialIcons:

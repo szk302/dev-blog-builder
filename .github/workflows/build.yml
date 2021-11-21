@@ -79,7 +79,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GR_PAT }}
-          # github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           repository: ${{ github.repository_owner }}/dev-blog-html
  
