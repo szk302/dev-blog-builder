@@ -31,7 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/szk302/dev-blog-builder:hugo-${{ github.event.inputs.hugo_version }}_asciidoctor-${{ github.event.inputs.asciidoctor_version }}
+      # image: ghcr.io/szk302/dev-blog-builder:hugo-${{ github.event.inputs.hugo_version }}_asciidoctor-${{ github.event.inputs.asciidoctor_version }}
+      image: ghcr.io/szk302/dev-blog-builder:hugo-${{ inputs.hugo_version }}_asciidoctor-${{ inputs.asciidoctor_version }}
       credentials:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.CR_PAT }}
