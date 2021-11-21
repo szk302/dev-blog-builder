@@ -46,7 +46,7 @@ jobs:
           repository: ${{ github.repository_owner }}/dev-blog-builder
       - 
         name: Fetch content
-        run: git submodule update --init --recursive
+        run: git submodule update --init --recursive --remote
       - 
         name: Build dev blog
         run: hugo --destination public
