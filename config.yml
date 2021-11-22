@@ -3,10 +3,13 @@ title: Szk302 開発ブログ
 paginate: 20
 theme: PaperMod
 
+disablePathToLower: true
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
 
 googleAnalytics: UA-212898668-1
 
