@@ -106,7 +106,7 @@ params:
         hiddenInSingle: false # hide on single page
 
     editPost:
-        URL: "https://github.com/szk302/dev-blog-content"
+        URL: "https://github.com/szk302/dev-blog-content/blob/main"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
