@@ -1,9 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
-[submodule "environment"]
-	path = environment
-	url = https://github.com/szk302/dev-blog-environment.git
 [submodule "content"]
 	path = content
 	url = https://github.com/szk302/dev-blog-content.git
