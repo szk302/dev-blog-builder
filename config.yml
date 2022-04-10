@@ -144,8 +144,9 @@ menu:
         - name: 検索
           url: search/
           weight: 30
-        - name: Books
-          url: books/
+        - identifier: books
+          name: Books
+          url: fixed/books
           weight: 35
         - identifier: profile
           name: プロフィール
