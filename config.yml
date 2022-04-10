@@ -22,9 +22,9 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: "Szk302 開発ブログ"
+    title: "Szk302 Teck Blog"
     description: "日々の開発で得られた知見を書き出します"
-    keywords: [開発, Dev, Blog, PaperMod]
+    keywords: [開発, Teck, Dev, Blog, PaperMod]
     author: Szk302
     # author: ["Me", "You"] # multiple authors
     images: ["https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"]
@@ -56,7 +56,7 @@ params:
         safari_pinned_tab: "https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"
 
     label:
-        text: "Szk302 開発ブログ"
+        text: "Szk302 Teck Blog"
         # icon: /apple-touch-icon.png
         icon: https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42
         iconHeight: 35
