@@ -1,5 +1,5 @@
 baseURL: https://szk302.dev/
-title: Szk302 開発ブログ
+title: Szk302 Tech Blog
 paginate: 20
 theme: PaperMod
 
@@ -144,6 +144,9 @@ menu:
         - name: 検索
           url: search/
           weight: 30
+        - name: Books
+          url: books/
+          weight: 35
         - identifier: profile
           name: プロフィール
           url: fixed/profile
