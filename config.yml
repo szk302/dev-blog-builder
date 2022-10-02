@@ -180,3 +180,23 @@ markup:
     attributes:
       my-base-url: 'https://localhost/'
       my-attribute-name: my value
+
+security:
+  enableInlineShortcodes: false
+  exec:
+    allow:
+    - ^dart-sass-embedded$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+    - ^asciidoctor$
+    osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+  funcs:
+    getenv:
+    - ^HUGO_
+  http:
+    methods:
+    - (?i)GET|POST
+    urls:
+    - .*
