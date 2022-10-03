@@ -51,6 +51,9 @@ jobs:
         name: Build dev blog
         run: hugo --destination public
       - 
+        name: Add Google AdSense txt
+        run: cp -rf ./ads.txt public/ads.txt
+      - 
         name: Archive generated html
         uses: actions/upload-artifact@v2
         with:
