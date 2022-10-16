@@ -1,5 +1,5 @@
 baseURL: https://szk302.dev/
-title: Szk302 Tech Blog
+title: Szk302 Log Blog
 paginate: 20
 theme: PaperMod
 
@@ -22,9 +22,9 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: "Szk302 Teck Blog"
-    description: "日々の開発で得られた知見を書き出します"
-    keywords: [開発, Teck, Dev, Blog, PaperMod]
+    title: "Szk302 Log Blog"
+    description: "脳の外部記憶装置"
+    keywords: [開発, Teck, Log, Dev, Blog, PaperMod]
     author: Szk302
     # author: ["Me", "You"] # multiple authors
     images: ["https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"]
